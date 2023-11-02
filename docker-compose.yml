@@ -1,0 +1,12 @@
+version: '3'
+services:
+  alpine-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: brunojoao3/alpine-custom:alpinevim
+    volumes:
+      - alpine-data:/app
+    tty: true
+volumes:
+  alpine-data:
