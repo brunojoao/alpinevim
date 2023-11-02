@@ -1,6 +1,7 @@
 version: '3'
 services:
   alpine-container:
+    container_name: alpinevim
     build:
       context: .
       dockerfile: Dockerfile
