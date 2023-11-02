@@ -7,5 +7,8 @@ services:
       dockerfile: Dockerfile
     image: brunojoao3/alpine-custom:alpinevim
     volumes:
-      - ~/projects:/app
+      - ~/projects:/projects
+      - alpine-data:/app
     tty: true
+volumes:
+  alpine-data:

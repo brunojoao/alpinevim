@@ -12,7 +12,9 @@ RUN apk add --no-cache \
     go \
     neovim \
     ripgrep \
-    alpine-sdk
+    alpine-sdk \
+    wget \
+    unzip 
 
 RUN mkdir -p /usr/share/fonts/truetype/
 
